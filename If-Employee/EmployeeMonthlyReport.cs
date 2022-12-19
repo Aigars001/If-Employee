@@ -15,6 +15,13 @@ namespace If_Employee
         public int Month { get; set; }
 
         public decimal Salary { get; set; }
-    }
 
+        public EmployeeMonthlyReport(int employeeId, int year, int month, decimal salary)
+        {
+            EmployeeId = employeeId;
+            Year = year;
+            Month = month;
+            Salary = salary;
+        }
+    }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace If_Employee
+namespace If_Employee.Interfaces
 {
     public interface ICompany
     {
