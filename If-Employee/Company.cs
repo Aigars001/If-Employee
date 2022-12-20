@@ -51,6 +51,7 @@ namespace If_Employee
 
         public EmployeeMonthlyReport[] GetMonthlyReport(DateTime periodStartDate, DateTime periodEndDate)
         {
+            Validator.ValidateDate(periodStartDate, periodEndDate);
             return _employeesMonthlyReportList.ToArray<EmployeeMonthlyReport>();
         }
 

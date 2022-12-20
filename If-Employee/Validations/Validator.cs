@@ -28,5 +28,13 @@ namespace If_Employee.Validations
                 throw new InvalidHourlySalaryException();
             }
         }
+
+        public static void ValidateDate(DateTime start, DateTime end)
+        {
+            if(start > end)
+            {
+                throw new InvalidDateException();
+            }
+        }
     }
 }

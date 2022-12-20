@@ -164,5 +164,16 @@ namespace If_Employee.Test
             result[1].EmployeeId.Should().Be(2);
             result[1].Salary.Should().Be(72m);
         }
+
+        [Fact]
+        public void CompanyMonthlyReport_WroingDate_ThrowsInvalidDateException()
+        {
+            var firstDay = new DateTime(2022, 12, 13);
+            var lastDay = new DateTime(2022, 12, 6);
+
+            Action act = () => _company.GetMonthlyReport(firstDay, lastDay);
+
+            act.Should().Throw<InvalidDateException>().WithMessage("Start date must be before end date");
+        }
     }
 }
