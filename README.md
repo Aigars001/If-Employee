@@ -1,25 +1,29 @@
-# If-Employee
+Think about it as a service for calculating employee salaries based on reported time.
+Implement rules which seem logical to you.
 
-Think about it as a service for calculating employee salaries based on reported time. Implement rules which seem logical to you.
+## Goal 
 
-Goal
 Implement Employee salary service in code using the TDD approach
 
-Requirements
-A company can have any number of employees.
-New employees can be recruited, and existing employees can leave a company.
-The same employee can return to the company.
-An employee is reporting worked hours daily.
-You must calculate the monthly salary for each employee.
-Use C# language and IDE that is convenient for you
-Use TDD approach
-Think about OOP design patterns and S.O.L.I.D. principles
-In case of error, throw different type of exceptions for each situation
-It is not allowed to change the given code.
-Comments and code must be in English language
-No need for UI and database
-As a result we expect the solution with source code
-We are giving some interfaces and classes
+## Requirements
+
+- A company can have any number of employees.
+- New employees can be recruited, and existing employees can leave a company.
+- The same employee can return to the company.
+- An employee is reporting worked hours daily.
+- You must calculate the monthly salary for each employee.
+- Use C# language and IDE that is convenient for you
+- Use TDD approach
+- Think about OOP design patterns and S.O.L.I.D. principles
+- In case of error, throw different type of exceptions for each situation
+- It is not allowed to change the given code.
+- Comments and code must be in English language
+- No need for UI and database
+- As a result we expect the solution with source code
+
+## We are giving some interfaces and classes
+
+```
 public interface ICompany
 {
     /// <summary>
@@ -93,3 +97,6 @@ public class EmployeeMonthlyReport
 
     public decimal Salary { get; set; }
 }
+
+
+```
